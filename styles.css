@@ -6,7 +6,33 @@ body {
 }
 
 .calculator-body {
-    background-color: silver;
+    border: 1px #000 solid;
     padding: 30px;
+    display:flex;
+    flex-direction: column;
+}
+
+.keypad {
+    display:flex;
+    width: 500px;
+}
+
+.number-buttons {
     display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.number-button,
+.op-btn {
+    width: 30px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px #000 solid;
+    border-radius: 5px;
 }
