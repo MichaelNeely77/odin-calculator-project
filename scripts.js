@@ -1,6 +1,7 @@
 const num1;
 const num2;
 const operator;
+// Attach the variables to the calculator UI?
 
 
 const addFunction = function(num1, num2) {
