@@ -1,5 +1,5 @@
-const num1;
-const num2;
+const num1 = 0;
+const num2 = 0;
 const operator;
 // Attach the variables to the calculator UI?
 
