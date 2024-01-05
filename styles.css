@@ -12,6 +12,17 @@ body {
     flex-direction: column;
 }
 
+.calculator-body h2 {
+    text-align:center;
+}
+
+#calc-screen {
+    height: 70px;
+    width: 75%;
+    border: 1px solid #666;
+    margin: 20px auto;
+}
+
 .keypad {
     display:flex;
     width: 500px;
