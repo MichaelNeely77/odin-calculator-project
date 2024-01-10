@@ -40,8 +40,9 @@ function operate(num1, num2, operator) {
 
 }
 operate();
-
-addEventlistener('click', () => {
-
-})
+const numButton = document.querySelector('.number-button');
+console.log(numButton);
+// for (let i = 0; i < ) {
+//
+// }
 
