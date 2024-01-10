@@ -39,4 +39,4 @@ function operate(num1, num2, operator) {
 
 }
 // How will we select the operator? switch statement?
-console.log(operate(14, 5, divFunction));
+console.log(operate(32, 2, addFunction));
