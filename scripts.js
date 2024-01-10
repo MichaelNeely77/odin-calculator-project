@@ -20,6 +20,7 @@ const divFunction = (num1, num2) => {
 }
 
 function operate(num1, num2, operator) {
+
     switch(operator) {
         case addFunction:
             return num1 + num2;
@@ -39,4 +40,4 @@ function operate(num1, num2, operator) {
 
 }
 // How will we select the operator? switch statement?
-console.log(operate(32, 2, addFunction));
+
