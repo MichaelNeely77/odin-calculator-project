@@ -39,5 +39,9 @@ function operate(num1, num2, operator) {
     }
 
 }
-// How will we select the operator? switch statement?
+operate();
+
+addEventlistener('click', () => {
+
+})
 
