@@ -40,9 +40,7 @@ function operate(num1, num2, operator) {
 
 }
 operate();
-const numButton = document.querySelector('.number-button');
+const numButton = document.querySelectorAll('.number-button');
 console.log(numButton);
-// for (let i = 0; i < ) {
-//
-// }
+
 
