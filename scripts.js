@@ -40,7 +40,7 @@ function operate(num1, num2, operator) {
 
 }
 operate();
-const numButton = document.querySelectorAll('.number-button');
+const numButton = document.querySelectorAll('.number-button').value;
 console.log(numButton);
 
 
