@@ -37,10 +37,12 @@ function operate(num1, num2, operator) {
         default:
             return "Choose add, subtract, multiply, or divide as an operator";
     }
-
 }
 operate();
-const numButton = document.querySelectorAll('.number-button').value;
-console.log(numButton);
+const numButton = document.querySelectorAll('.number-button');
+numButton.addEventListener('click', () => {
+    console.log("clicked");
+});
+
 
 
