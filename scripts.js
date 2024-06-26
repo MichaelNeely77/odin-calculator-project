@@ -4,7 +4,6 @@ const operator = '';
 let numButton = document.querySelectorAll('#number-button');
 // Attach the variables to the calculator UI?
 
-
 const addFunction = function(num1, num2) {
     return num1 + num2;
 }
@@ -40,15 +39,20 @@ function operate(num1, num2, operator) {
     }
 }
 operate();
+// console.log(numButton); // querySelectorAll returns an array
+numButton[0].addEventListener('click', () => {
 
-numButton.addEventListener('click', () => {
-    console.log("clickec");
-}); // Returns numButton.addEventListener is not a function.
-
+});
+// Loop over buttons and find index number to go into the brackets
+for(let i = 0; i < numButton.length; i++) {
+    numButton[i].addEventListener('click', function() {
+        console.log("clicked");
+    });
+}
 
 // Make buttons selectable with addEventListener or onclick
 // Buttons must return a value
 // Build function that uses the operate() function to return a value in teh console.
-// Maybe a forEach loop over the buttons to select which one works? Maybe a map functoin?
+// Maybe a forEach loop over the buttons to select which one works? Maybe a map function?
 
 
