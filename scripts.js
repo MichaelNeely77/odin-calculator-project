@@ -45,10 +45,12 @@ numButton[0].addEventListener('click', () => {
 });
 // Loop over buttons and find index number to go into the brackets
 for(let i = 0; i < numButton.length; i++) {
-    numButton[i].addEventListener('click', function() {
+    numButton[i].addEventListener('click', () => {
         console.log("clicked");
     });
 }
+
+//Next step is to get numbers to click into the display.
 
 // Make buttons selectable with addEventListener or onclick
 // Buttons must return a value
