@@ -4,7 +4,7 @@ const operator = '';
 let numButton = document.querySelectorAll('#number-button');
 let opBtn  = document.querySelectorAll('#op-btn');
 // Attach the variables to the calculator UI?
-console.log(opBtn);
+
 const addFunction = function(num1, num2) {
     return num1 + num2;
 }
@@ -47,12 +47,18 @@ operate();
 // Loop over buttons and find index number to go into the brackets
 for(let i = 0; i < numButton.length; i++) {
     numButton[i].addEventListener('click', () => {
-        // console.log("clicked");
+        const display = document.querySelector('#display');
+
+        console.log(numButton[i].value);
+        it('should status', () => {
+            
+        });
+
     });
 }
-for (let i = 0; i <= opBtn.length; i++) {
+for (let i = 0; i < opBtn.length; i++) {
     opBtn[i].addEventListener('click', () => {
-        console.log("Op clicked");
+        //console.log("Op clicked");
     });
 }
 
