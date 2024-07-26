@@ -50,9 +50,7 @@ for(let i = 0; i < numButton.length; i++) {
         const display = document.querySelector('#display');
 
         console.log(numButton[i].value);
-        it('should status', () => {
-            
-        });
+
 
     });
 }
