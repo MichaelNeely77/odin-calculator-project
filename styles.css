@@ -26,10 +26,12 @@ body {
 #display {
     display:flex;
     justify-content: flex-end;
+    font-size: 48px;
+    font-family: 'OpenSans', sans-serif;
 }
 
 #display span {
-    font-size: 60px;
+
 }
 
 .keypad {

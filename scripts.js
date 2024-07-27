@@ -39,24 +39,25 @@ function operate(num1, num2, operator) {
             return "Choose add, subtract, multiply, or divide as an operator";
     }
 }
-operate();
+
 // console.log(numButton); // querySelectorAll returns an array
 // numButton[0].addEventListener('click', () => {
 //
 // });
-// Loop over buttons and find index number to go into the brackets
+// Loop over buttons and find index number to go into the brackets DONE
+// Get Numbers to display in screen DONE
+// Get numbers to increment into screen
 for(let i = 0; i < numButton.length; i++) {
     numButton[i].addEventListener('click', () => {
-        const display = document.querySelector('#display');
-
-        console.log(numButton[i].value);
-
-
+    let display = numButton[i].value;
+    document.getElementById("display").innerHTML += display;
     });
 }
+
+// Get operations buttons to click different finctions
 for (let i = 0; i < opBtn.length; i++) {
     opBtn[i].addEventListener('click', () => {
-        //console.log("Op clicked");
+
     });
 }
 
