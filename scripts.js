@@ -6,18 +6,34 @@ let opBtn  = document.querySelectorAll('#op-btn');
 // Attach the variables to the calculator UI?
 
 const addFunction = function(num1, num2) {
+    console.log("added");
     return num1 + num2;
+
 }
 // console.log(addFunction(3, 4));
 
 const subFunction = function(num1, num2) {
+    console.log("subtracted");
     return num1 - num2;
+
 }
 const multFunction = function(num1, num2) {
+    console.log("multiplied");
     return num1 * num2;
+
 }
 const divFunction = (num1, num2) => {
+    console.log("divided");
     return num1 / num2;
+
+}
+
+const clearFunction = () => {
+    console.log("clear");
+}
+
+const equalsFunction = () => {
+    console.log("equals");
 }
 
 function operate(num1, num2, operator) {
