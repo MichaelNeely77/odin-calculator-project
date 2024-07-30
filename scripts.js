@@ -3,7 +3,7 @@ const num2 = 0;
 const operator = '';
 let numButton = document.querySelectorAll('#number-button');
 let opBtn  = document.querySelectorAll('#op-btn');
-// Attach the variables to the calculator UI?
+// Attach the variables to the calculator UI? DONE
 
 const addFunction = function(num1, num2) {
     console.log("added");
@@ -25,11 +25,11 @@ const multFunction = function(num1, num2) {
 const divFunction = (num1, num2) => {
     console.log("divided");
     return num1 / num2;
-
 }
 
 const clearFunction = () => {
-    console.log("clear");
+    let display = document.getElementById('display');
+
 }
 
 const equalsFunction = () => {
@@ -51,6 +51,9 @@ function operate(num1, num2, operator) {
         case divFunction:
             return num1 / num2;
             break;
+        case clearFunction:
+            return display;
+            break;
         default:
             return "Choose add, subtract, multiply, or divide as an operator";
     }
@@ -64,13 +67,17 @@ function operate(num1, num2, operator) {
 // Get Numbers to display in screen DONE
 // Get numbers to increment into screen
 for(let i = 0; i < numButton.length; i++) {
-    numButton[i].addEventListener('click', () => {
     let display = numButton[i].value;
+    numButton[i].addEventListener('click', () => {
+    // Evaluate this input as for the digits
     document.getElementById("display").innerHTML += display;
+    console.log(typeof display);
+    // Does to return as one integer but as each key stroke as a separate integer in a string
     });
+
 }
 
-// Get operations buttons to click different finctions
+// Get operations buttons to click different functions
 for (let i = 0; i < opBtn.length; i++) {
     opBtn[i].addEventListener('click', () => {
 
