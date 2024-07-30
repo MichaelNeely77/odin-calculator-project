@@ -93,3 +93,4 @@ for (let i = 0; i < opBtn.length; i++) {
 // Maybe a forEach loop over the buttons to select which one works? Maybe a map function?
 
 
+// Function constructor might be an answer
