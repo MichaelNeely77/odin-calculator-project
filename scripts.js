@@ -3,7 +3,7 @@ const num2 = 0;
 const operator = '';
 let numButton = document.querySelectorAll('#number-button');
 let opBtn  = document.querySelectorAll('#op-btn');
-// Attach the variables to the calculator UI? DONE
+
 
 const addFunction = function(num1, num2) {
     console.log("added");
@@ -29,7 +29,7 @@ const divFunction = (num1, num2) => {
 
 const clearFunction = () => {
     let display = document.getElementById('display');
-    return display.innerHTML = '';
+    return display.innerHTML = '0';
 
 }
 
@@ -68,13 +68,18 @@ function operate(num1, num2, operator) {
 // Get Numbers to display in screen DONE
 // Get numbers to increment into screen
 for(let i = 0; i < numButton.length; i++) {
-    let display = numButton[i].value;
+    let digit = numButton[i].value;
+
     numButton[i].addEventListener('click', () => {
     // Evaluate this input as for the digits
-    document.getElementById("display").innerHTML += display++;
+    document.getElementById("display").innerHTML += digit;
+    // Increments key input
+
+console.log(digit);
 
 
-        console.log(display);
+
+
     // Does to return as one integer but as each key stroke as a separate integer in a string in the console. Must allow the integers to increment
     });
 
