@@ -3,7 +3,12 @@ const num2 = 0;
 const operator = '';
 let numButton = document.querySelectorAll('#number-button');
 let opBtn  = document.querySelectorAll('#op-btn');
-
+let display = document.getElementById('display');
+// Cosmetic adding zero to freshly loaded page to be activated later
+// document.addEventListener("DOMContentLoaded", () =>
+//     {
+//         return display.innerHTML = '0';
+//     });
 
 const addFunction = function(num1, num2) {
     console.log("added");
@@ -28,7 +33,7 @@ const divFunction = (num1, num2) => {
 }
 
 const clearFunction = () => {
-    let display = document.getElementById('display');
+
     return display.innerHTML = '0';
 
 }
@@ -68,14 +73,16 @@ function operate(num1, num2, operator) {
 // Get Numbers to display in screen DONE
 // Get numbers to increment into screen
 for(let i = 0; i < numButton.length; i++) {
+    //display.innerHTML = ''; // Subtract cosmetic zero from document loaded event adding zero
     let digit = numButton[i].value;
+    let digitNumber = Number(digit);
 
     numButton[i].addEventListener('click', () => {
     // Evaluate this input as for the digits
     document.getElementById("display").innerHTML += digit;
     // Increments key input
 
-console.log(digit);
+
 
 
 
