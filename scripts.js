@@ -29,6 +29,7 @@ const divFunction = (num1, num2) => {
 
 const clearFunction = () => {
     let display = document.getElementById('display');
+    return display.innerHTML = '';
 
 }
 
@@ -70,9 +71,11 @@ for(let i = 0; i < numButton.length; i++) {
     let display = numButton[i].value;
     numButton[i].addEventListener('click', () => {
     // Evaluate this input as for the digits
-    document.getElementById("display").innerHTML += display;
-    console.log(typeof display);
-    // Does to return as one integer but as each key stroke as a separate integer in a string
+    document.getElementById("display").innerHTML += display++;
+
+
+        console.log(display);
+    // Does to return as one integer but as each key stroke as a separate integer in a string in the console. Must allow the integers to increment
     });
 
 }
@@ -85,12 +88,12 @@ for (let i = 0; i < opBtn.length; i++) {
 }
 
 
-//Next step is to get numbers to click into the display.
+//Next step is to get numbers to click into the display. DONE
 
-// Make buttons selectable with addEventListener or onclick
-// Buttons must return a value
-// Build function that uses the operate() function to return a value in teh console.
-// Maybe a forEach loop over the buttons to select which one works? Maybe a map function?
+// Make buttons selectable with addEventListener or onclick DONE
+// Buttons must return a value DONE
+// Build function that uses the operate() function to return a value in the console. DONE
+
 
 
 // Function constructor might be an answer
